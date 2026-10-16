@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Commerce Products</title>
+</head>
+<body>
+    <h1>Our Products</h1>
+
+    <div>
+        <h3>Laptop</h3>
+        <p>Price: ₹45000</p>
+        <button onclick="addToCart('Laptop')">
+            Add to Cart
+        </button>
+    </div>
+
+    <div>
+        <h3>Headphones</h3>
+        <p>Price: ₹1500</p>
+        <button onclick="addToCart('Headphones')">
+            Add to Cart
+        </button>
+    </div>
+
+    <h3 id="message"></h3>
+
+    <script>
+        function addToCart(product) {
+            document.getElementById("message").innerText =
+                product + " added to cart!";
+        }
+    </script>
+</body>
+</html>
